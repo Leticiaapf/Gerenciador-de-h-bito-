@@ -18,38 +18,43 @@ JavaScript ES6+
 Planejado Angular com TypeScript  
 
 ## Estrutura do Projeto
+```
 journey/
 ├── editorial-archive.html
 ├── css/
-│ └── styles.css
+│   └── styles.css
 ├── js/
-│ └── script.js
+│   └── script.js
 └── README.md
+```
 
 ## Migração para Angular
 
 A migração para Angular tem como objetivo melhorar a manutenção, testabilidade e organização por componentes.
 
-### Estrutura Proposta
+## Estrutura Proposta
+
+```
 src/
 ├── app/
-│ ├── app.module.ts
-│ ├── app.component.html
-│ ├── app.component.ts
-│ ├── services/
-│ │ ├── habit.service.ts
-│ │ └── state.service.ts
-│ ├── models/
-│ │ ├── habit.model.ts
-│ │ └── statistics.model.ts
-│ └── components/
-│ ├── navbar/
-│ ├── habit-form/
-│ ├── habit-table/
-│ ├── habit-stats/
-│ └── monthly-panel/
+│   ├── app.module.ts
+│   ├── app.component.html
+│   ├── app.component.ts
+│   ├── services/
+│   │   ├── habit.service.ts
+│   │   └── state.service.ts
+│   ├── models/
+│   │   ├── habit.model.ts
+│   │   └── statistics.model.ts
+│   └── components/
+│       ├── navbar/
+│       ├── habit-form/
+│       ├── habit-table/
+│       ├── habit-stats/
+│       └── monthly-panel/
 ├── assets/
 └── environments/
+```
 
 
 ## Componentes e Serviços
