@@ -180,9 +180,62 @@ border-radius: 9px;
   background-color: #3d5a3e;
 }
 
+#btnLess {
+   width: 42px;
+  height: 42px;
+  background: #1a1a1a;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 22px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;   /* botão não encolhe */
+}
+
+#btnLess:hover {
+  background-color: #9c2909;
+}
 
 td{
   
       border-bottom: 1px solid rgb(19, 19, 19);
  
+}
+
+/* estado normal — quadrado vazio */
+.habit-check {
+  width: 28px;
+  height: 28px;
+  border: 1.5px solid #e2dfd8; /* borda do quadrado */
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 0 auto;  /* centraliza horizontalmente */
+   /* centraliza o conteúdo dentro do quadrado (ex: o "X") */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: transparent;   /* x invisível */
+  transition: all 0.15s;    /* animação suave ao mudar de estado */
+}
+
+/* estado marcado — fundo preto com x branco */
+.habit-check.checked {
+  background: #1a1a1a;
+  border-color: #1a1a1a;
+  color: #ffffff;       /* x aparece */
+}
+
+#mySidenav a {
+ text-align: center;
+  left: -80px;
+  transition: 0.3s;
+  padding: 15px;
+  width: 100px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  border-radius: 0 5px 5px 0;
 }

@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Journey</title>
     <link rel="stylesheet" href="css/styles.css">
+     <script src=" js/script.js" defer ></script>
    
     
 </head>
@@ -22,7 +23,7 @@
   <a class="nav-a" href="#">Coleção</a>
 
 </div>
-  <Button class="new-habit" href="#habit"> Novo Hábito</Button>
+  <Button class="new-habit" href="#" onclick="document.getElementById('habit-input').focus()" > Novo Hábito</Button>
 </div>
 </nav>
 
@@ -37,81 +38,53 @@
     <form  class="form-left">
 
       <label for="habit-input" class="habit" id="habit">Adicionar novo hábito: </label> <br>
-      <input type="text" id="habit-input" name="habit-input" placeholder="Ex: Academia"> 
+      <input type="text" id="habit-input" name="habit-input" placeholder="Ex: Academia" required> 
       <button type="button" id="btnPlus" > +</button>
+            <button type="button" id="btnLess" > -</button>
+
+
 
 </form> 
          </div>
 
         <table class="table habit">
-          <thead>
+          <thead id="list-habits">
             <tr id="table-header">
               <th>Day</th>
-              <th>
-                Estudar
-              </th>
-                 <th>
-                Beber água
-              </th>
-                 <th>
-                Academia
-              </th>
-                 <th>
-                Leitura
-              </th>
+            
+
             </tr>
           </thead>
 
 
       <tbody id="table-body">
-        <tr>
-           <td>1</td>
+  <tr id="table-checkbox">
+    <td>1</td>
 
-           <td>  <div class="habit-check">x</div>
-          </td>
-            <td>
-    <div class="habit-check">x</div>
-          </td>
-            <td>
-    <div class="habit-check">x</div>
-          </td>
-            <td>
-    <div class="habit-check">x</div>
-          </td>
-        </tr>
+    <td><input type="checkbox" class ="habit-check"></td>
+    <td><input type="checkbox" class="habit-check"></td>
+    <td><input type="checkbox" class="habit-check"></td>
+    <td><input type="checkbox" class="habit-check"></td>
+  </tr>
 
-        <tr>
-           <td>2</td>
+  <tr>
+    <td>2</td>
 
-           <td>  <div class="habit-check">x</div>
-          </td>
-            <td>
-    <div class="habit-check">x</div>
-          </td>
-            <td>
-    <div class="habit-check">x</div>
-          </td>
-            <td>
-    <div class="habit-check">x</div>
-          </td>
-        </tr>
-   
-        <tr>
-           <td>3</td>
+    <td><input type="checkbox" class="habit-check"></td>
+    <td><input type="checkbox" class="habit-check"></td>
+    <td><input type="checkbox" class="habit-check"></td>
+    <td><input type="checkbox" class="habit-check"></td>
+  </tr>
 
-           <td>  <div class="habit-check">x</div>
-          </td>
-            <td>
-    <div class="habit-check">x</div>
-          </td>
-            <td>
-    <div class="habit-check">x</div>
-          </td>
-            <td>
-    <div class="habit-check">x</div>
-          </td>
-        </tr>
-       
+  <tr>
+    <td>3</td>
+
+    <td><input type="checkbox" class="habit-check"></td>
+    <td><input type="checkbox" class="habit-check"></td>
+    <td><input type="checkbox" class="habit-check"></td>
+    <td><input type="checkbox" class="habit-check"></td>
+  </tr>
+</tbody>
          
         </table>
 
@@ -119,12 +92,22 @@
   
   </section>
 
+
+
+
+
+  
+
   <section class="right">
     <div class="card">
       <h2>Painel Mensal</h2>
+<div div="constancy"></div>
+<div id="days-wons"></div>
     </div>
     <!-- conteúdo da página direita aqui -->
   </section>
+
+  
 </main>
 
 
@@ -135,6 +118,6 @@
 
 
 </main>
- <script src=" js/script.js" ></script>
+
 </body>
 </html>
